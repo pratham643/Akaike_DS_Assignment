@@ -1,13 +1,4 @@
----
-title: News Insight
-emoji: 📰
-colorFrom: blue
-colorTo: purple
-sdk: streamlit
-sdk_version: 1.43.2
-app_file: app.py
-pinned: false
----
+
 
 # 📢 News Insight – Simplified News Summarizer with Sentiment Analysis  
 
@@ -33,33 +24,41 @@ Built with ❤️ by **Prathmesh**
 ```bash
 git clone https://github.com/your-repo/news-insight.git
 cd news-insight
+```
 
-### 2️⃣ Install Dependencies
-
+### 2️⃣ Install Dependencies  
+```bash
 pip install -r requirements.txt
+```
 
-### 3️⃣ Set Up API Key
-
-1.Sign up at NewsAPI to get a free API key.
-2.Set the key in your environment.
-
+### 3️⃣ Set Up API Key  
+1. Sign up at [NewsAPI](https://newsapi.org/) to get a free API key.  
+2. Set the key in your environment:  
+```bash
 export NEWS_API_KEY=your_api_key
+```
 
-### 🖥️ Usage
-🔹 Run the Streamlit App
+---
 
+## 🖥️ Usage  
+
+### Run the Streamlit App  
+```bash
 streamlit run app.py
+```
 
-💡 What happens?
+### 💡 What happens?  
+1. You enter a company name (e.g., Tesla, Google).  
+2. The app fetches, summarizes, and analyzes the news.  
+3. You see news cards with sentiment analysis.  
+4. You hear a Hindi TTS summary.  
 
-🔹You enter a company name (e.g., Tesla, Google).
-🔹🔹The app fetches, summarizes, and analyzes the news.
-🔹🔹🔹You see news cards with sentiment analysis.
-🔹🔹🔹🔹You hear a Hindi TTS summary.
-
-🔹🔹 Run API Server
-
+### Run API Server  
+```bash
 python api.py
+```
 
-🔹GET /fetch-news?company=Tesla → Fetch latest news.
-🔹🔹POST /analyze-sentiment → Analyze sentiment of given text.
+#### API Endpoints  
+- **GET** `/fetch-news?company=Tesla` → Fetch latest news.  
+- **POST** `/analyze-sentiment` → Analyze sentiment of given text.  
+
