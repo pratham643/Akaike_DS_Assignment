@@ -34,18 +34,18 @@ Built with ❤️ by **Prathmesh**
 git clone https://github.com/your-repo/news-insight.git
 cd news-insight
 
-2️⃣ Install Dependencies
+### 2️⃣ Install Dependencies
 
 pip install -r requirements.txt
 
-3️⃣ Set Up API Key
+### 3️⃣ Set Up API Key
 
 1.Sign up at NewsAPI to get a free API key.
 2.Set the key in your environment.
 
 export NEWS_API_KEY=your_api_key
 
-🖥️ Usage
+### 🖥️ Usage
 🔹 Run the Streamlit App
 
 streamlit run app.py
